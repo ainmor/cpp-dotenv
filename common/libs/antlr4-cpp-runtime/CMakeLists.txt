@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.5...4.0)
+
 project(antlr4-cpp-runtime VERSION 4.8)
 
 set(CMAKE_CXX_STANDARD 11)

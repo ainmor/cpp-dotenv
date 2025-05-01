@@ -6,7 +6,7 @@
 
 namespace dotenv
 {
-    class dotenv
+    class Dotenv
     {
     public:
 
@@ -15,7 +15,7 @@ namespace dotenv
 
     public:
 
-        dotenv& load_dotenv(const std::string& dotenv_path = env_filename,
+        Dotenv& load_dotenv(const std::string& dotenv_path = env_filename,
                             const bool overwrite = false,
                             const bool interpolate = true);
 
@@ -23,23 +23,23 @@ namespace dotenv
 
     public:
 
-        virtual ~dotenv() = default;
-        dotenv(const dotenv&) = delete;
-        void operator=(const dotenv&) = delete;
+        virtual ~Dotenv() = default;
+        Dotenv(const Dotenv&) = delete;
+        void operator=(const Dotenv&) = delete;
 
-        static dotenv& instance();
+        static Dotenv& instance();
     
     private:
 
-        dotenv() = default;
+    Dotenv() = default;
 
     private:
 
         static const std::string env_filename;
-        static dotenv _instance;
+        static Dotenv _instance;
 
     };
 
 
-    extern dotenv& env;
+    extern Dotenv& env;
 }

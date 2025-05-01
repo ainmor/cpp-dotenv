@@ -1,0 +1,14 @@
+diff --git a/external/cpp-dotenv/src/common/logger.h b/external/cpp-dotenv/src/common/logger.h
+index abcdef0..1234567 100644
+--- a/external/cpp-dotenv/src/common/logger.h
++++ b/external/cpp-dotenv/src/common/logger.h
+@@ -40,7 +40,8 @@ public:
+ 
+         struct less
+         {
+-            bool operator()(const position& p1, const position& p2);
++            bool operator()(const position& p1, const position& p2) const;
+         };
+ 
+     public:
+

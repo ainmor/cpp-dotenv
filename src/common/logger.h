@@ -29,10 +29,11 @@ namespace dotenv
         {
         public:
 
-            struct less
-            {
-                bool operator()(const position& p1, const position& p2);
-            };
+        struct less
+        {
+            bool operator()(const position& p1, const position& p2) const;
+        };
+        
 
         public:
 
